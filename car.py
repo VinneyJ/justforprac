@@ -12,3 +12,9 @@ class Car(Machine):
         super().__init__(model, milage, typeofcar)
         self.yearofmake = year
         self.customization = custom
+
+    def size(self):
+        if self.customization == "small":
+            return "Thats a good choice of a car"
+
+
